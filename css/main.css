@@ -1,3 +1,6 @@
+
+@import url(variables.css);
+
 body{
 margin:0;
 font-family: Arial;
@@ -7,7 +10,7 @@ font-family: Arial;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:#4c39d4;
+background: var(--fondo);
 padding:10px 40px;
 color:white;
 }
@@ -28,7 +31,7 @@ position:relative;
 }
 
 .menu a{
-color:white;
+color:var(--letra_nav);
 text-decoration:none;
 padding:10px;
 display:block;
@@ -40,15 +43,15 @@ display:none;
 position:absolute;
 top:40px;
 left:0;
-background:white;
-color:black;
+background:rgb(3, 32, 149);
+color:var(--letra_nav);
 list-style:none;
 padding:0;
 width:200px;
 }
 
 .submenu li a{
-color:black;
+color:rgb(255, 255, 255);
 }
 
 /* subsubmenu */
@@ -57,7 +60,7 @@ display:none;
 position:absolute;
 top:0;
 left:200px;
-background:white;
+background:rgb(14, 1, 118);
 list-style:none;
 padding:0;
 width:200px;
