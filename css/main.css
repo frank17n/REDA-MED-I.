@@ -5,15 +5,15 @@ body {
     font-family: Arial;
 }
 
-
-.navbar {
+nav.navbar {
     width: 80%;
     margin: 20px auto;
     /* centra */
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #4c39d4;
+    background: var(--fondo);
     padding: 12px 40px;
     color: white;
     border-radius: 10px;
@@ -26,7 +26,6 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    /* 🔥 clave */
     align-items: center;
     width: 100%;
     padding: 0;
@@ -43,7 +42,17 @@ body {
     padding: 10px;
     display: block;
 }
-
+.dropdown a {
+    display: flex;
+    align-items: center;
+    height: 60px; /* 🔥 altura fija */
+    padding: 0 20px;
+}
+ .dropdown a:hover{
+    background-color: gold;
+    height: auto;
+    margin:  auto;
+}
 /* submenu */
 .submenu {
     display: none;
@@ -74,6 +83,7 @@ body {
 }
 
 /* hover */
+
 .dropdown:hover .submenu {
     display: block;
 }
