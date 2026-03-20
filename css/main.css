@@ -1,81 +1,144 @@
-
 @import url(variables.css);
 
-body{
-margin:0;
-font-family: Arial;
+body {
+    margin: 0;
+    font-family: Arial;
 }
 
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background: var(--fondo);
-padding:10px 40px;
-color:white;
+
+.navbar {
+    width: 80%;
+    margin: 20px auto;
+    /* centra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4c39d4;
+    padding: 12px 40px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1000;
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* 🔥 clave */
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.menu{
-list-style:none;
-display:flex;
-gap:30px;
+.menu li {
+    position: relative;
 }
 
-.menu li{
-position:relative;
-}
-
-.menu a{
-color:var(--letra_nav);
-text-decoration:none;
-padding:10px;
-display:block;
+.menu a {
+    color: var(--letra_nav);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 
 /* submenu */
-.submenu{
-display:none;
-position:absolute;
-top:40px;
-left:0;
-background:rgb(3, 32, 149);
-color:var(--letra_nav);
-list-style:none;
-padding:0;
-width:200px;
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: rgb(3, 32, 149);
+    color: var(--letra_nav);
+    list-style: none;
+    padding: 0;
+    width: 200px;
 }
 
-.submenu li a{
-color:rgb(255, 255, 255);
+.submenu li a {
+    color: rgb(255, 255, 255);
 }
 
 /* subsubmenu */
-.submenu2{
-display:none;
-position:absolute;
-top:0;
-left:200px;
-background:rgb(14, 1, 118);
-list-style:none;
-padding:0;
-width:200px;
+.submenu2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background: rgb(14, 1, 118);
+    list-style: none;
+    padding: 0;
+    width: 200px;
 }
 
 /* hover */
-.dropdown:hover .submenu{
-display:block;
+.dropdown:hover .submenu {
+    display: block;
 }
 
-.dropdown2:hover .submenu2{
-display:block;
+.dropdown2:hover .submenu2 {
+    display: block;
 }
 
-.submenu li:hover{
-background:#008000;
-color:white;
+.submenu li:hover {
+    background: #008000;
+    color: white;
+}
+
+
+
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* 🔥 importante */
+    width: 100%;
+    max-width: 1920px;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;/
+}
+
+
+
+main.mensaje {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* align-items: center; */
+    
+   grid-auto-flow: column;
+    gap: 40px;
+}
+
+main.mensaje #mensaje {
+    grid-column: 7/11;
+    max-width: 100%;
+
+    background-color: rgb(185, 185, 185);
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+
+main.mensaje #img {
+    grid-column: 2/6;
+
+}
+
+main.mensaje img {
+    max-width: 100%;
+    border-radius: 20px;
 }
