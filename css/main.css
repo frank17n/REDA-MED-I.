@@ -48,11 +48,8 @@ nav.navbar {
     height: 60px; /* 🔥 altura fija */
     padding: 0 20px;
 }
- .dropdown a:hover{
-    background-color: gold;
-    height: auto;
-    margin:  auto;
-}
+
+
 /* submenu */
 .submenu {
     display: none;
