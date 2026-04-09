@@ -1,6 +1,11 @@
 @import url(variables.css);
+<<<<<<< HEAD
 @import url(base.css);
 @import url(layout.css);
+=======
+@import url(layout.css);
+@import url(variables.css);
+>>>>>>> origin
 @import url(components.css);
 
 body {
@@ -123,7 +128,13 @@ body {
 }
 
 
+<<<<<<< HEAD
 
+=======
+main{
+    margin-top: 100px;
+}
+>>>>>>> origin
 main.mensaje {
 
     display: grid;
@@ -144,16 +155,24 @@ main.mensaje #mensaje {
 }
 
 main.mensaje #img {
+<<<<<<< HEAD
     grid-column: 2/6;
+=======
+    grid-column: 3/6;
+>>>>>>> origin
 
 }
 
 main.mensaje img {
     max-width: 100%;
     border-radius: 20px;
+<<<<<<< HEAD
 }
 
 
 
 
 
+=======
+}
+>>>>>>> origin
