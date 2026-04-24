@@ -1,0 +1,37 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ;
+    src: url(../assets/fonts/) format(woft2);/*woft o woft2*/
+}
+
+
+
+body{
+    font-family: var(--fuente-parrafo);
+    color: var(--color-oscuro);
+    line-height: 1.5;
+    background-color: var(--color-claro);
+}
+
+
+/*contenedor central*/
+.container{
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+imag{
+    max-width: 100%;
+    display: block;
+
+}
+a{
+    text-decoration: none;
+    color:inherit
+}
